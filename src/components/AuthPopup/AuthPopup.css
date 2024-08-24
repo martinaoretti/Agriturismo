@@ -1,0 +1,113 @@
+/* Stile per l'overlay della modale */
+.auth-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Stile per la finestra della modale */
+.auth-popup {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+/* Stile per il bottone di chiusura */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #b4b4b4;
+}
+
+/* Input di autenticazione */
+.auth-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Bottone di autenticazione */
+.auth-btn {
+  background: #2e90f8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 15px auto;
+  display: block;
+  width: 80%;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.auth-btn.google {
+  background: #c7473c;
+}
+
+.auth-btn:hover {
+  background: #0056b3;
+}
+
+.auth-btn.google:hover {
+  background: #c13828;
+}
+
+/* Messaggio di errore */
+.error-msg {
+  color: #fb3232;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Modalità di cambio tra registrazione e accesso (tasto registrati)*/
+.switch-mode {
+  color: #007BFF;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 130px;
+  display: inline-block;
+  text-align: center;
+}
+
+.switch-mode:hover {
+  text-decoration: underline;
+}
+
+/* Titolo del popup */
+.auth-popup h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
